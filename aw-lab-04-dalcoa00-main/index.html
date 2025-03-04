@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <title>La Alcoba del Deportista</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Autor" content="Diego Alcoba Arias">
+        <meta name="Descripción" content="Página creada para la realización de la práctica 4 de Aplicaciones Web">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+        <script src="assets/js/script.js" async></script>
+        <script src="assets/js/inventory.js" async></script>
+    </head>
+
+    <body>
+        <main  class="container">
+            <!-- FORMULARIO -->
+            <section> 
+                <h1>Gestión de productos</h1>
+                <form name="product" method="post" class="grid">
+                    <div>
+                        <label for="name_prod">Nombre del producto: </label>
+                        <input type="text" name="name" id="name_prod" placeholder="Nombre del producto (obligatorio)" required> <br><br>
+                        <label for="url_prod">Dirección de la imagen: </label>
+                        <input type="url" name="image" id="image_prod" placeholder="URL del producto"> <br><br>
+                        <label for="price_prod">Precio: </label>
+                        <input type="number" name="price" id="price_prod" value="0"> <br><br>
+                        <label for="units_prod">Unidades disponibles: </label>
+                        <input type="number" name="stock" id="stock_prod" value="0" required>                        
+                    </div>
+
+                    <div>
+                        <br>
+                        <button type="button" class="contrast" id="addUpdateProduct">Añadir/Actualizar</button>
+                        <button type="reset" class="contrast">Limpiar</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- INVENTARIO -->
+            <br><br>
+            <section>
+                <h1>Inventario de productos</h1>
+                <button type="button" class="contrast" id="refreshTable">Refrescar</button>
+                <button type="button" class="outline contrast" id="exportTable">Exportar</button>
+                <button type="button" class="outline contrast" id="importTable">importar</button>
+
+                <br><br>
+                <table class="overflow-auto">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventory" class="striped">      
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        
+        <br><br>
+        <footer class="container-fluid">
+            <p>© 2024. Diego Alcoba Arias. Aplicaciones Web. Grado en Ingeniería Informática (Universidad de León).</p>
+        </footer>
+    </body>
+</html>

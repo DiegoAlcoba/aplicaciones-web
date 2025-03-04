@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio 06 - Mazo Magic</title>
+  <meta name="description" content="Laboratorio 06: JavaScript, manipulación DOM y Fetch">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <!-- JS -->
+  <script src="assets/js/main.js" type="module" async></script>
+</head>
+<body>
+  <!-- Cabecera -->
+  <header class="container-fluid">
+    <hgroup>
+      <h1>Cartas Magic</h1>
+      <p>Crea tu mazo de Magic</p>
+    </hgroup>
+  </header>
+  <!-- Contenido principal -->
+  <main class="container">
+    <section class="advanced-search">
+        <fieldset role="group">
+            <select id="color">
+                <option selected value="">Color</option>
+            </select>
+            <select id="type">
+                <option selected value="">Tipo</option>
+            </select>
+            <select id="rarity">
+                <option selected value="">Rareza</option>
+            </select>
+            <form name="magic-search">
+                <fieldset role="group">
+                    <input type="text" name="name" placeholder="Introduzca el nombre de la carta">
+                    <input type="submit" value="Buscar">
+                </fieldset>
+            </form>
+        </fieldset>
+    </section>
+
+    <div class="content-magic">
+
+        <aside id="details">
+        </aside>
+    
+        <section class="cards">
+            <h3>Cartas</h3>
+            <div class="card-grid">
+            </div>
+        </section>
+
+        <aside>
+            <h3>Tu mazo</h3>
+            <div class="mazo">
+                <ul id="deck-list">
+                </ul>
+            </div>
+        </aside>
+    </div>
+    
+  </main>
+  <!-- Pie de página -->
+  <footer class="container-fluid">
+    <hr>
+    <p>&copy; 2024. Aplicaciones Web. <em>Grado en Ingeniería Informática (Universidad de León)</em>.</p>
+  </footer>
+</body>
+</html>
