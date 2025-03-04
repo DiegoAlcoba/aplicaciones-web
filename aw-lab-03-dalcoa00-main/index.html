@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Autor" content="Diego Alcoba Arias">
+        <meta name="Descripción" content="Página creada para la realización de la práctica 3 de Aplicaciones Web">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+        <title>La Alcoba del Deportista</title>
+    </head>
+
+    <body>
+
+        <header class="container-fluid">
+            <nav>
+                <ul>
+                    <h1><a href="index.html">La Alcoba del Deportista</h1>
+                </ul>
+                <ul>
+                    <form method="get">
+                        <fieldset role="group">
+                            <input type = "search" id = "name" name = "name" placeholder="Nombre del producto...">
+                            <button type="submit">Buscar</button>
+                        </fieldset>
+                    </form>
+                </ul>
+            </nav>    
+        </header>
+
+        <main class="container">
+            <section> <!-- CATÁLOGO DE LA TIENTA -->
+                <header>
+                    <br><br>
+                    <h2>Catálogo de productos</h2>
+                </header>
+                
+                <div class="grid"> <!-- PRODUCTOS DE LA TIENDA -->
+                    <div>
+                        <a href="#producto1"></a>
+                        <a href="#producto1"> <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f4bac890-f200-46be-8dbe-81d627c8cfb8/nikepremier-3-botas-de-futbol-de-perfil-bajo-terreno-firme-j7PbSL.png" alt="Nike Premier 3"> </a>
+                        <div>
+                            <p>Botas de fútbol Nike Premier 3</p>
+                            <p>109,99€</p>
+                        </div>
+                        <footer>
+                            <button type="button" class="secondary">Comprar</button>
+                        </footer>
+                    </div>
+                    
+                    <div>
+                        <a href="#producto2"></a>
+                        <a href="#producto2"> <img src="https://www.futbolemotion.com/imagesarticulos/203388/750/espinillera-nike-mercurial-lite-hyper-turquoise-black-fuchsia-dream-0.webp" alt="Espinilleras"> </a>
+                        <div>
+                            <p>Espinilleras Nike Mercurial</p>
+                            <p>19,99€</p>
+                        </div>
+                        <footer>
+                            <button type="button" class="secondary">Comprar</button>
+                        </footer>
+                    </div>
+
+                    <div>
+                        <a href="#producto3"></a>
+                        <a href="#producto3"> <img src="https://www.futbolemotion.com/imagesarticulos/197659/750/camiseta-adidas-real-madrid-primera-equipacion-2023-2024-white-0.webp" alt="Camiseta Real Madrid"> </a>
+                        <div>
+                            <p>Camiseta Real Madrid Primera equipación 2023/24</p>
+                            <p>99,99€</p>
+                        </div>
+                        <footer>
+                            <button type="button" class="secondary">Comprar</button>
+                        </footer>
+                    </div>
+
+                    <div>
+                        <a href="#producto4"></a>
+                        <a href="#producto4"> <img src="https://www.futbolemotion.com/imagesarticulos/198043/750/pantalon-corto-adidas-real-madrid-cf-tercera-equipacion-2023-2024-nino-black-0.webp" alt="Pantalones real madrid"> </a>
+                        <div>
+                            <p>Pantalones Real Madrid Segunda equipación 2023/24</p>
+                            <p>34,99€</p>
+                        </div>
+                        <footer>
+                            <button type="button" class="secondary">Comprar</button>
+                        </footer>
+                    </div>
+                </div>    
+            </section>
+
+            <aside> <!-- CESTA DE LA COMPRA -->
+                <header>
+                    <br><br>
+                    <h2>Cesta</h2>
+                </header>
+
+                <div class="overflow-auto">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Nike Premier 3</th>
+                                <td>1</td>
+                                <td>109,99€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Camiseta Real Madrid Primera equipación 2023/24</th>
+                                <td>1</td>
+                                <td>99,99€</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="col">Total</th>
+                                <th scope="col">    </th>
+                                <th scope="col">209,98€</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                
+                <form action="tramitar_pedido" method="post">
+                    <details> <!-- WIDGET DETALLES -->
+                        <summary role="button" class="outline contrast">Aplicar código de descuento</summary>
+                        <fieldset role="group">
+                            <input type="text" name="cod_descuento" placeholder="Añadir código de descuento">
+                            <button type="button">Aplicar</button>
+                        </fieldset>
+                    </details>
+
+                    <br>
+                    <button type="submit">Tramitar pedido</button>
+                </form>
+            </aside>
+        </main>
+
+        <br><br>
+        <footer class="container-fluid">
+            <p>© 2024. Diego Alcoba Arias. Aplicaciones Web. Grado en Ingeniería Informática (Universidad de León).</p>
+        </footer>
+    </body>
+</html>

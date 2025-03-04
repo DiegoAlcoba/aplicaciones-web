@@ -1,0 +1,111 @@
+html {
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    /* height: 500px; */
+    /* Si indico la altura la iamgen de fondo no cubrirá toda 
+    la página, solo 500px y el resto hasta el final se ve en blanco */
+}
+
+header {
+    height: 500px
+}
+
+body {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h1 {
+    max-width: 780px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    color: white;
+    text-align: center; 
+}
+
+.img-autor {
+
+    background-image: url('../images/profile.png');
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 100%;
+    border: 1px solid white
+}
+
+.game {
+    margin-right: 40px;
+    width: 66.67%;
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+p {
+    margin-top: 20px;
+    font-family: "Palatino", serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51, 51, 51)
+}
+
+.img-game {
+    width: 66.67%;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.datos-autor {
+    font-family: "Palatino", serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    line-height: 24px;
+}
+
+.actualiz {
+    font-family: "Palatino", serif;
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(51, 51, 51);
+    line-height: 24px;
+    border-bottom: 10px;
+    border-width: 2px;
+    border-color: #e6e6e6;
+}
+
+li {
+    margin-right: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(0, 0, 0 / 0.25);
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(51, 51, 51)
+}
+
+.hiperv {
+    color: #42b4d6;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hiperv:hover {
+    text-decoration: underline;
+}
