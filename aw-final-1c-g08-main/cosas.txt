@@ -1,4 +1,0 @@
-Lista de usuarios mongodb:
-
-Usuario: root
-Contraseña: 4bracadabra9atadecabra
