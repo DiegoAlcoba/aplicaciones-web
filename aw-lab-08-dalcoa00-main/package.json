@@ -1,0 +1,26 @@
+{
+  "name": "aw-lab-08",
+  "version": "1.0.0",
+  "description": "AW - Laboratorio 08: Node y Express",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+	"dev": "nodemon --watch src src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULE-Informatica-2023-2024/aw-lab-08-dalcoa00.git"
+  },
+  "author": "Diego Alcoba Arias - dalcoa00@estudiantes.unileon.es",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULE-Informatica-2023-2024/aw-lab-08-dalcoa00/issues"
+  },
+  "homepage": "https://github.com/ULE-Informatica-2023-2024/aw-lab-08-dalcoa00#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
